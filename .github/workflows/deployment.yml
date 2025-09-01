@@ -31,6 +31,7 @@ jobs:
             changed:
               - 'src/**/*.ts'
               - 'src/**/*.tsx'
+              - 'tsup.config.ts'
 
   deploy:
     runs-on: ubuntu-latest
