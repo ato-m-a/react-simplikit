@@ -1,6 +1,10 @@
 import { defineConfig } from 'tsup';
 
 const defaultConfig = {
+  // To support React Server Components
+  banner: {
+    js: '"use client";',
+  },
   entry: ['**/index.ts'],
   splitting: false,
   clean: true,
